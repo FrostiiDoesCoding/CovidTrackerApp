@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.SettingsFragment">
+
+
+    <!--android:layout test_gravity="center" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/darkmode"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_brightness_2_24"
+                />
+            <ImageButton
+                android:id="@+id/reset"
+                android:src="@drawable/ic_baseline_refresh_24"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toTopOf="@+id/workout"
+                app:layout_constraintStart_toEndOf="@+id/workout"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:textSize="15dp"
+        android:text="Covidti is a free Open-Source API Courtesy of restless-rocket-6084, 2020. Charts from MPChart."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
